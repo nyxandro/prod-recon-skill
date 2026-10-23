@@ -1,11 +1,11 @@
 # Prod Recon Skill
 
-[![Download Skill](https://img.shields.io/badge/Download-prod--recon.skill-blue?style=for-the-badge)](https://github.com/nyxandro/prod-recon-skill/raw/main/dist/prod-recon.skill)
+[![Download Prod Recon Skill](https://img.shields.io/badge/Download-prod--recon.skill-blue?style=for-the-badge)](https://github.com/nyxandro/prod-recon-skill/raw/main/dist/prod-recon.skill)
 
-A skill for Claude Code and OpenCode: read-only reconnaissance of a running deployment for any
-project. Production, stage or the local stack. The agent finds the way in on its own, confirms
-which commit is actually running there, reads the logs and the database for the right time
-window, reports a verdict with evidence, and stops without fixing anything.
+A read-only prod recon skill for Claude Code and OpenCode: reconnaissance of a running
+deployment for any project. Production, stage or the local stack. The agent finds the way in on
+its own, confirms which commit is actually running there, reads the logs and the database for
+the right time window, reports a verdict with evidence, and stops without fixing anything.
 
 "Take a look at prod, read-only" is the most frequent request an owner makes to an agent, and
 the one that goes wrong the same way every time: the agent asks which server, or re-explains the
@@ -43,6 +43,17 @@ re-running CI jobs, copying keys or printing secrets. A found cause does not gra
 fix it, even when the fix is one line.
 
 ## Install
+
+**Claude Code, as a plugin**, from [nyxandro/skills](https://github.com/nyxandro/skills), the
+catalog of my skills:
+
+```text
+/plugin install prod-recon --marketplace nyxandro/skills
+```
+
+Use one way or the other: with both, Claude Code loads the skill twice.
+
+**Any agent, as a skill folder:**
 
 Download `dist/prod-recon.skill` (the badge above) and unpack it into the skills folder of your
 agent, or clone this repository and link the `prod-recon/` folder there. The skill is a single
