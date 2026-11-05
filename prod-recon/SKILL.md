@@ -1,17 +1,16 @@
 ---
 name: prod-recon
 description: >
-  Read-only reconnaissance of a running deployment (production, stage or the local stack) for
-  any project: find the way in on your own, confirm which commit runs there, read the logs and
-  the database for the right time window, report a verdict with evidence, and stop without
-  fixing anything. Always use it when the owner asks to look at a server without changing it,
+  Read-only reconnaissance of a running deployment, whether production, stage or the local stack,
+  for any project: a verdict with evidence on what runs there and what is wrong, with nothing
+  changed or fixed. Always use it when the owner asks to look at a server without changing it,
   in any wording: "read-only", "recon and report", "take a look at prod", "check the server and
   report", "look at the logs on stage", "is the agent alive right now", "why did the bot stop
   responding", "were there any errors last week", "what's the state of the server", "which
   version is on prod". The owner may phrase this in another language, often as a single word
   meaning "read-only"; match on meaning.
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Read-only reconnaissance

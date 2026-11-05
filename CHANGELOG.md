@@ -8,6 +8,14 @@ numbered MAJOR.MINOR.PATCH.
 - **MINOR** (1.1.0) is a new or changed rule, for example another source to read.
 - **MAJOR** (2.0.0) changes the read-only contract or the shape of the report.
 
+## [1.1.0] - 2026-11-06
+
+### Changed
+
+- The description says what the skill does and when to use it, without retelling the steps of
+  the work. With the steps in the description, the model can follow them and skip the body of the
+  skill, as Superpowers' tests showed. The trigger phrases are unchanged.
+
 ## [1.0.0] - 2026-11-06
 
 The first numbered version. The skill itself is unchanged since `ec55d9e`. This release adds the
