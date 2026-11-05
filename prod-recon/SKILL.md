@@ -10,6 +10,8 @@ description: >
   responding", "were there any errors last week", "what's the state of the server", "which
   version is on prod". The owner may phrase this in another language, often as a single word
   meaning "read-only"; match on meaning.
+metadata:
+  version: "1.0.0"
 ---
 
 # Read-only reconnaissance
